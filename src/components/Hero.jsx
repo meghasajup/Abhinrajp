@@ -169,11 +169,33 @@ export default function Hero({ onOpenContact, onNavigate }) {
         <div className="w-full relative flex justify-center lg:justify-end items-end order-2 mt-3 lg:mt-0 h-full min-h-[350px] lg:min-h-[590px]">
           <div className="absolute w-[300px] sm:w-[440px] h-[300px] sm:h-[440px] rounded-full bg-gradient-to-tr from-[#c9a96e]/20 via-[#c9a96e]/10 to-transparent blur-3xl bottom-12 right-0 pointer-events-none" />
 
-          <div className="relative w-full max-w-[320px] sm:max-w-[390px] lg:max-w-[430px] flex justify-center items-end overflow-visible" onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
-            
-            <img src={abhin} alt="Portrait of Abhinraj" className="relative block w-full h-auto object-contain grayscale select-none pointer-events-none drop-shadow-[0_20px_40px_rgba(0,0,0,0.18)]" loading="eager" draggable="false" />
+          <div 
+            className="relative w-full max-w-[320px] sm:max-w-[390px] lg:max-w-[430px] flex justify-center items-end overflow-visible cursor-pointer" 
+            onMouseMove={handleMouseMove} 
+            onMouseLeave={handleMouseLeave}
+          >
+            {/* Base Grayscale Image */}
+            <img 
+              src={abhin} 
+              alt="Portrait of Abhinraj" 
+              className="relative block w-full h-auto object-contain grayscale select-none pointer-events-none drop-shadow-[0_20px_40px_rgba(0,0,0,0.18)]" 
+              loading="eager" 
+              draggable="false" 
+            />
 
-            <img src={abhin} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-contain select-none pointer-events-none" style={{ clipPath: `circle(65px at ${mousePosition.x}px ${mousePosition.y}px)`, WebkitClipPath: `circle(65px at ${mousePosition.x}px ${mousePosition.y}px)`, transition: "clip-path 0.04s linear" }} draggable="false" />
+            {/* Color Overlay Image with dynamic mouse clip-path */}
+            <img 
+              src={abhin} 
+              alt="" 
+              aria-hidden="true" 
+              className="absolute inset-0 w-full h-full object-contain select-none pointer-events-none" 
+              style={{ 
+                clipPath: `circle(90px at ${mousePosition.x}px ${mousePosition.y}px)`, 
+                WebkitClipPath: `circle(90px at ${mousePosition.x}px ${mousePosition.y}px)`, 
+                transition: "clip-path 0.03s ease-out" 
+              }} 
+              draggable="false" 
+            />
           </div>
         </div>
 

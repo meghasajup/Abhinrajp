@@ -1,6 +1,11 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* =========================================
+   ROOT THEME VARIABLES
+========================================= */
 
 :root {
   --background: #f8f6f2;
@@ -8,45 +13,62 @@
   --ink: #111111;
   --muted: #666666;
   --subtle: #a39e93;
+
   --line: #ffffff59;
   --surface: #ffffffa6;
   --surface-2: #ffffff73;
   --panel: #ffffffbf;
   --field: #ffffff73;
+
   --accent: #c9a96e;
   --accent-from: #dfcda4;
   --accent-to: #c9a96e;
+
   --hero-from: #fcfaf7;
   --hero-mid: #f8f6f2;
   --hero-to: #efece6;
+
   --glass: #ffffff2e;
   --glass-border: #ffffff59;
   --glass-glow: #ffffff99;
+
   --shadow-lux: 0 20px 60px #00000014;
+
   --chip-bg: #ffffff3d;
   --chip-bg-h: #ffffff73;
   --chip-line: #ffffff59;
+
   --btn-bg: #111111;
   --btn-fg: #f8f6f2;
   --btn-badge-bg: #f8f6f2;
   --btn-badge-fg: #111111;
+
   --outline-h: #ffffff66;
+
   --vig: #f8f6f259;
   --scrim: rgba(17, 17, 17, 0.25);
   --cord-shadow: 0.18;
+
   --radius-pill: 9999px;
   --radius-card: 2rem;
   --radius-card-sm: 1.25rem;
   --radius-control: 0.875rem;
+
   --text-watermark: 13rem;
   --container-shell: 88rem;
   --bar-h: 3.5rem;
   --gut-lg: 5.5rem;
+
   --fg-rgb: 17, 17, 17;
   --bg-rgb: 248, 246, 242;
 
-  --font: "Onest", -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", ui-sans-serif, system-ui, "Segoe UI", sans-serif;
-  --font-cursive: "Instrument Serif", "Playfair Display", Georgia, serif;
+  --font: "Onest", -apple-system, BlinkMacSystemFont,
+    "SF Pro Display", "SF Pro Text", ui-sans-serif,
+    system-ui, "Segoe UI", sans-serif;
+
+  --font-cursive: "Instrument Serif",
+    "Playfair Display", Georgia, serif;
+
   --font-script: "Caveat", cursive, sans-serif;
 
   --e-line: cubic-bezier(0.215, 0.61, 0.355, 1);
@@ -57,32 +79,49 @@
   color-scheme: light;
 }
 
+
+/* =========================================
+   DARK MODE
+========================================= */
+
 [data-mode="dark"] {
   --background: #111111;
   --foreground: #f8f6f2;
   --ink: #f8f6f2;
   --muted: #a39e93;
   --subtle: #736e65;
+
   --line: #ffffff1f;
   --surface: #1c1a1a;
   --surface-2: #262323;
   --panel: #1a1818;
   --field: #ffffff14;
+
   --chip-bg: #ffffff14;
   --chip-bg-h: #ffffff29;
   --chip-line: #ffffff24;
+
   --btn-bg: #f8f6f2;
   --btn-fg: #111111;
   --btn-badge-bg: #111111;
   --btn-badge-fg: #f8f6f2;
+
   --outline-h: #ffffff1a;
+
   --vig: #00000059;
   --scrim: rgba(0, 0, 0, 0.6);
   --cord-shadow: 0.45;
+
   --fg-rgb: 248, 246, 242;
   --bg-rgb: 17, 17, 17;
+
   color-scheme: dark;
 }
+
+
+/* =========================================
+   GLOBAL RESET
+========================================= */
 
 * {
   box-sizing: border-box;
@@ -93,7 +132,11 @@ html {
   font-family: var(--font);
   background-color: var(--background);
   color: var(--foreground);
-  transition: background-color 0.4s ease, color 0.4s ease;
+
+  transition:
+    background-color 0.4s ease,
+    color 0.4s ease;
+
   overflow-x: hidden;
 }
 
@@ -101,8 +144,10 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
+
   background-color: var(--background);
   color: var(--foreground);
+
   overflow-x: hidden;
 }
 
@@ -111,7 +156,11 @@ body {
   color: #111111;
 }
 
-/* Custom Typography Helpers */
+
+/* =========================================
+   CUSTOM TYPOGRAPHY
+========================================= */
+
 .font-cursive {
   font-family: var(--font-cursive);
 }
@@ -132,44 +181,400 @@ body {
   font-weight: 400;
 }
 
-/* Glassmorphism Classes */
+
+/* =========================================
+   GLASSMORPHISM
+========================================= */
+
 .glass-pill {
   background: rgba(255, 255, 255, 0.65);
+
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
+
   border: 1px solid rgba(255, 255, 255, 0.8);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
 [data-mode="dark"] .glass-pill {
   background: rgba(28, 26, 26, 0.65);
+
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
+
   border: 1px solid rgba(255, 255, 255, 0.12);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.4);
 }
 
-/* Brass Texture / Finish */
+
+/* =========================================
+   BRASS TEXTURE / FINISH
+========================================= */
+
 .brass-plate {
-  background: linear-gradient(135deg, #f0dfa8 0%, #c9a96e 50%, #9e7d3b 100%);
+  background:
+    linear-gradient(
+      135deg,
+      #f0dfa8 0%,
+      #c9a96e 50%,
+      #9e7d3b 100%
+    );
+
   color: #2b1f09;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
-  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.6), inset 0 -1px 2px rgba(0, 0, 0, 0.4), 0 2px 6px rgba(0, 0, 0, 0.25);
+
+  text-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.4);
+
+  box-shadow:
+    inset 0 1px 1px rgba(255, 255, 255, 0.6),
+    inset 0 -1px 2px rgba(0, 0, 0, 0.4),
+    0 2px 6px rgba(0, 0, 0, 0.25);
 }
 
 .brass-handle {
-  background: linear-gradient(to right, #eedba2, #c9a96e, #8a6a2c);
-  box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.6), 0 3px 6px rgba(0, 0, 0, 0.35);
+  background:
+    linear-gradient(
+      to right,
+      #eedba2,
+      #c9a96e,
+      #8a6a2c
+    );
+
+  box-shadow:
+    inset 0 1px 2px rgba(255, 255, 255, 0.6),
+    0 3px 6px rgba(0, 0, 0, 0.35);
 }
 
-/* Scrollbar styling */
+
+/* =========================================
+   SCROLLBAR
+========================================= */
+
 ::-webkit-scrollbar {
   width: 8px;
 }
+
 ::-webkit-scrollbar-track {
   background: var(--background);
 }
+
 ::-webkit-scrollbar-thumb {
   background: var(--subtle);
   border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+
+
+/* =========================================
+   HERO SECTION
+========================================= */
+
+#home {
+  position: relative;
+  isolation: isolate;
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* =========================================
+   HERO BACKGROUND DECORATION
+========================================= */
+
+#home > div:first-child {
+  pointer-events: none;
+}
+
+/* =========================================
+   SPIRAL NOTEBOOK CALENDAR
+========================================= */
+
+/* Main calendar */
+
+.calendar-container {
+  perspective: 1400px;
+  -webkit-perspective: 1400px;
+}
+
+/* Page stage */
+
+.calendar-page-stage {
+  position: relative;
+  width: 100%;
+  height: 120px;
+
+  perspective: 1400px;
+  -webkit-perspective: 1400px;
+
+  perspective-origin: center top;
+  -webkit-perspective-origin: center top;
+
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+}
+
+/* =========================================
+   NEXT PAGE - UNDER CURRENT PAGE
+========================================= */
+
+.calendar-next-page {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 120px;
+
+  z-index: 1;
+
+  overflow: hidden;
+
+  transform: translateZ(-1px);
+
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+
+/* =========================================
+   CURRENT PHYSICAL PAPER
+========================================= */
+
+.calendar-current-page {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 120px;
+
+  z-index: 2;
+
+  transform-origin: center top;
+
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+
+  will-change: transform;
+}
+
+
+/* =========================================
+   FRONT OF PAPER
+========================================= */
+
+.calendar-paper-front {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 120px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  transform: translateZ(0.5px);
+
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+
+/* =========================================
+   BACK OF PAPER
+========================================= */
+
+.calendar-paper-back {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 120px;
+
+  transform: rotateX(180deg) translateZ(0.5px);
+
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+
+/* =========================================
+   STATIONARY SPIRAL RINGS
+========================================= */
+
+.calendar-spiral {
+  position: absolute;
+  z-index: 10;
+
+  transform: translateZ(5px);
+
+  pointer-events: none;
+}
+
+
+/* =========================================
+   REAL NOTEBOOK PAGE TURN
+========================================= */
+
+.calendar-page-turning {
+  animation:
+    notebookPageTurn 700ms
+    cubic-bezier(0.45, 0.05, 0.55, 0.95)
+    forwards;
+}
+
+
+/* Complete paper sheet rotates */
+
+@keyframes notebookPageTurn {
+  0% {
+    transform: rotateX(0deg);
+  }
+
+  15% {
+    transform: rotateX(-18deg);
+  }
+
+  35% {
+    transform: rotateX(-55deg);
+  }
+
+  55% {
+    transform: rotateX(-105deg);
+  }
+
+  75% {
+    transform: rotateX(-150deg);
+  }
+
+  100% {
+    transform: rotateX(-180deg);
+  }
+}
+
+
+/* =========================================
+   PAPER SHADOW DURING PAGE TURN
+========================================= */
+
+.calendar-current-page.calendar-page-turning {
+  filter:
+    drop-shadow(0 5px 8px rgba(0, 0, 0, 0.12));
+}
+
+
+/* =========================================
+   DESKTOP HERO LAYOUT
+========================================= */
+
+@media (min-width: 1024px) {
+
+  #home {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  #home .calendar-container {
+    max-width: 510px;
+  }
+}
+
+
+/* =========================================
+   LARGE DESKTOP
+========================================= */
+
+@media (min-width: 1280px) {
+
+  #home {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+}
+
+
+/* =========================================
+   TABLET RESPONSIVE
+========================================= */
+
+@media (max-width: 1023px) {
+
+  #home {
+    min-height: auto;
+    padding-top: 130px;
+  }
+
+  #home .calendar-container {
+    max-width: 510px;
+  }
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVE
+========================================= */
+
+@media (max-width: 600px) {
+
+  #home {
+    padding-top: 110px;
+    padding-bottom: 24px;
+  }
+
+  #home .calendar-container {
+    max-width: 100%;
+  }
+
+  .calendar-page-stage,
+  .calendar-current-page,
+  .calendar-next-page,
+  .calendar-paper-front,
+  .calendar-paper-back {
+    height: 110px;
+  }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 380px) {
+
+  #home {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .calendar-spiral {
+    left: 10px;
+    right: 10px;
+  }
+
+}
+
+
+/* =========================================
+   REDUCED MOTION
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  .calendar-page-turning {
+    animation-duration: 0.01ms;
+  }
+
 }

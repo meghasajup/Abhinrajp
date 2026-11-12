@@ -73,40 +73,40 @@ export default function Hero({ onOpenContact, onNavigate }) {
         {/* Left column content */}
         <div className="w-full flex flex-col justify-center items-start order-1 py-8 lg:py-0">
 
-          <div className="flex items-center gap-2 mb-6">
+          <div className="flex items-center gap-2 mb-4">
             <span className="w-[5px] h-[5px] rounded-full bg-[#77716e]" />
             <span className="text-xs font-medium text-muted">
               Flutter Developer
             </span>
           </div>
 
-          <h1 className="w-full text-[clamp(38px,4vw,54px)] leading-[1.08] font-extrabold tracking-[-0.045em] text-foreground mb-1">
+          <h1 className="w-full text-[clamp(36px,3.8vw,50px)] leading-[1.08] font-extrabold tracking-[-0.045em] text-foreground mb-1">
             Hi, I'm Abhinraj.
           </h1>
 
-          <h2 className="text-[clamp(38px,4vw,54px)] leading-[1.08] font-bold tracking-[-0.045em] text-foreground/45 mb-6">
+          <h2 className="text-[clamp(36px,3.8vw,50px)] leading-[1.08] font-bold tracking-[-0.045em] text-foreground/45 mb-4">
             I am a
           </h2>
 
           {/* NOTEBOOK WITH MATCHING FLOATING SHADOW */}
-          <div className="calendar-container relative cursor-pointer select-none w-full max-w-[480px] my-6" onClick={flipToNext} title="Click to turn page">
+          <div className="calendar-container relative cursor-pointer select-none w-full max-w-[440px] my-3" onClick={flipToNext} title="Click to turn page">
             
             {/* SOFT MATCHING FLOATING BLACK SHADOW */}
-            <div className="absolute inset-x-2 -bottom-3 h-12 bg-black/40 dark:bg-black/80 rounded-[24px] blur-md rotate-[-3.5deg] pointer-events-none" />
+            <div className="absolute inset-x-2 -bottom-2.5 h-10 bg-black/40 dark:bg-black/80 rounded-[20px] blur-md rotate-[-3.5deg] pointer-events-none" />
             
             {/* Subtle Paper Stack Underlayers */}
-            <div className="absolute inset-x-2 bottom-[-8px] h-12 rounded-2xl bg-[#d5cfca] dark:bg-[#221f1f] rotate-[-2.5deg] pointer-events-none" />
-            <div className="absolute inset-x-1 bottom-[-4px] h-10 rounded-2xl bg-[#e6e1dc] dark:bg-[#1a1717] rotate-[-1.5deg] pointer-events-none" />
+            <div className="absolute inset-x-2 bottom-[-6px] h-10 rounded-2xl bg-[#d5cfca] dark:bg-[#221f1f] rotate-[-2.5deg] pointer-events-none" />
+            <div className="absolute inset-x-1 bottom-[-3px] h-8 rounded-2xl bg-[#e6e1dc] dark:bg-[#1a1717] rotate-[-1.5deg] pointer-events-none" />
 
             {/* Page Stage */}
             <div className="calendar-page-stage relative">
               
               {/* Next Page */}
-              <div className="calendar-next-page absolute inset-0 rounded-2xl bg-[#fffdfb] dark:bg-[#1a1818] border border-[#e5dfdb] dark:border-white/10 px-6 sm:px-8 pt-7 pb-4 shadow-sm flex flex-col justify-between">
-                <span className="text-[clamp(24px,3.2vw,40px)] font-black tracking-[-0.04em] text-[#151313] dark:text-white whitespace-nowrap overflow-hidden text-ellipsis">
+              <div className="calendar-next-page absolute inset-0 rounded-2xl bg-[#fffdfb] dark:bg-[#1a1818] border border-[#e5dfdb] dark:border-white/10 px-5 sm:px-6 pt-4 pb-3 shadow-sm flex flex-col justify-between">
+                <span className="text-[clamp(22px,2.8vw,34px)] font-black tracking-[-0.04em] text-[#151313] dark:text-white whitespace-nowrap overflow-hidden text-ellipsis">
                   {nextRole.title}
                 </span>
-                <span className="self-end text-[11px] font-mono font-semibold tracking-widest text-[#b7b0ab]">
+                <span className="self-end text-[10px] font-mono font-semibold tracking-widest text-[#b7b0ab]">
                   {nextRole.num}
                 </span>
               </div>
@@ -120,11 +120,11 @@ export default function Hero({ onOpenContact, onNavigate }) {
                 className={`calendar-current-page ${isFlipping ? "calendar-page-turning" : ""}`}
               >
                 {/* Front Side */}
-                <div className="calendar-paper-front rounded-2xl bg-[#fffdfb] dark:bg-[#1a1818] border border-[#e5dfdb] dark:border-white/10 px-6 sm:px-8 pt-7 pb-4 shadow-[0_10px_25px_rgba(0,0,0,0.15)] dark:shadow-[0_10px_25px_rgba(0,0,0,0.5)] flex flex-col justify-between">
-                  <span className="text-[clamp(24px,3.2vw,40px)] font-black tracking-[-0.04em] text-[#151313] dark:text-white whitespace-nowrap overflow-hidden text-ellipsis">
+                <div className="calendar-paper-front rounded-2xl bg-[#fffdfb] dark:bg-[#1a1818] border border-[#e5dfdb] dark:border-white/10 px-5 sm:px-6 pt-4 pb-3 shadow-[0_10px_25px_rgba(0,0,0,0.15)] dark:shadow-[0_10px_25px_rgba(0,0,0,0.5)] flex flex-col justify-between">
+                  <span className="text-[clamp(22px,2.8vw,34px)] font-black tracking-[-0.04em] text-[#151313] dark:text-white whitespace-nowrap overflow-hidden text-ellipsis">
                     {currentRole.title}
                   </span>
-                  <span className="self-end text-[11px] font-mono font-semibold tracking-widest text-[#b7b0ab]">
+                  <span className="self-end text-[10px] font-mono font-semibold tracking-widest text-[#b7b0ab]">
                     {currentRole.num}
                   </span>
                 </div>
@@ -134,10 +134,10 @@ export default function Hero({ onOpenContact, onNavigate }) {
               </div>
 
               {/* STATIONARY SPIRAL RINGS */}
-              <div className="calendar-spiral absolute -top-3.5 left-5 right-5 flex justify-between items-center px-1 pointer-events-none z-30">
+              <div className="calendar-spiral absolute -top-3 left-4 right-4 flex justify-between items-center px-1 pointer-events-none z-30">
                 {Array.from({ length: 13 }).map((_, i) => (
                   <div key={i} className="flex flex-col items-center">
-                    <div className="w-1.5 sm:w-2 h-4.5 sm:h-5 rounded-full bg-gradient-to-b from-[#f0f0f0] via-[#888888] to-[#222222] shadow-[0_3px_5px_rgba(0,0,0,0.4)] border border-neutral-400/60" />
+                    <div className="w-1.5 sm:w-2 h-3.5 sm:h-4 rounded-full bg-gradient-to-b from-[#f0f0f0] via-[#888888] to-[#222222] shadow-[0_3px_5px_rgba(0,0,0,0.4)] border border-neutral-400/60" />
                     <div className="w-1.5 h-1.5 rounded-full bg-neutral-300 dark:bg-neutral-800 -mt-1" />
                   </div>
                 ))}
@@ -146,7 +146,7 @@ export default function Hero({ onOpenContact, onNavigate }) {
             </div>
           </div>
 
-          <p className="max-w-[460px] text-[15px] sm:text-[16px] text-foreground/75 leading-[1.7] mt-5 mb-6 font-normal">
+          <p className="max-w-[460px] text-[15px] sm:text-[16px] text-foreground/75 leading-[1.7] mt-4 mb-6 font-normal">
             Flutter Developer with 3+ years of experience building scalable, high-performance Android and iOS applications with a focus on clean architecture and seamless user experiences.
           </p>
 
@@ -174,10 +174,6 @@ export default function Hero({ onOpenContact, onNavigate }) {
             <img src={abhin} alt="Portrait of Abhinraj" className="relative block w-full h-auto object-contain grayscale select-none pointer-events-none drop-shadow-[0_20px_40px_rgba(0,0,0,0.18)]" loading="eager" draggable="false" />
 
             <img src={abhin} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-contain select-none pointer-events-none" style={{ clipPath: `circle(65px at ${mousePosition.x}px ${mousePosition.y}px)`, WebkitClipPath: `circle(65px at ${mousePosition.x}px ${mousePosition.y}px)`, transition: "clip-path 0.04s linear" }} draggable="false" />
-
-            <button onClick={() => onNavigate("#works")} className="absolute left-0 bottom-[18%] z-20 px-4 py-3 rounded-full bg-[#171515] text-white border border-white/20 text-xs font-medium shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer">
-              My ability card
-            </button>
           </div>
         </div>
 

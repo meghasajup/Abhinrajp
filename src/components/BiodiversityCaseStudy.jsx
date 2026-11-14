@@ -230,7 +230,7 @@ export default function BiodiversityCaseStudy({ onNavigate, onOpenContact }) {
           onClick={onOpenContact}
           className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#111111] text-[#f8f6f2] dark:bg-[#f8f6f2] dark:text-[#111111] text-xs sm:text-sm font-semibold tracking-wide hover:scale-105 active:scale-95 transition-all shadow-md cursor-pointer"
         >
-          <span>Discuss a Project with Bilal</span>
+          <span>Discuss a Project with Abhinraj</span>
           <ArrowRight className="w-4 h-4" />
         </button>
       </div>

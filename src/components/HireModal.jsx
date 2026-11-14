@@ -19,8 +19,8 @@ export default function HireModal({ isOpen, onClose }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const text = `Hi Bilal, my name is ${formData.name || 'Client'}.%0A%0AEmail: ${formData.email}%0APhone: ${formData.phone}%0A%0AProject Details:%0A${encodeURIComponent(formData.message || "I'd like to discuss a new project.")}`;
-    window.open(`https://wa.me/919897000000?text=${text}`, '_blank');
+    const text = `Hi Abhinraj, my name is ${formData.name || 'Client'}.%0A%0AEmail: ${formData.email}%0APhone: ${formData.phone}%0A%0AProject Details:%0A${encodeURIComponent(formData.message || "I'd like to discuss a new project.")}`;
+    window.open(`https://wa.me/918592943588?text=${text}`, '_blank');
     onClose();
   };
 

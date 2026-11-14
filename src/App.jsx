@@ -171,7 +171,7 @@ export default function App() {
         >
           <div className="flex flex-col items-center gap-4">
             <span className="font-extrabold text-3xl tracking-tight">
-              Bilal<span className="text-accent">.</span>
+              Abhinraj<span className="text-accent">.</span>
             </span>
             <div className="flex items-center gap-3 font-mono text-xs tracking-widest uppercase text-muted">
               <span className="w-2 h-2 rounded-full bg-accent animate-ping" />

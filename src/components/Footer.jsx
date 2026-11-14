@@ -109,7 +109,7 @@ export default function Footer({ onOpenContact, onNavigate }) {
             <ul className="space-y-2.5 text-sm">
               <li>
                 <a 
-                  href="https://github.com/bilal9897" 
+                  href="https://github.com/Abhinrajp" 
                   target="_blank" 
                   rel="noreferrer" 
                   className="inline-flex items-center gap-1.5 text-foreground/80 hover:text-accent transition-colors font-medium"
@@ -120,7 +120,7 @@ export default function Footer({ onOpenContact, onNavigate }) {
               </li>
               <li>
                 <a 
-                  href="https://www.linkedin.com/in/bilal-salmani-6190ab292/" 
+                  href="https://www.linkedin.com/in/abhinraj-p/" 
                   target="_blank" 
                   rel="noreferrer" 
                   className="inline-flex items-center gap-1.5 text-foreground/80 hover:text-accent transition-colors font-medium"
@@ -131,7 +131,7 @@ export default function Footer({ onOpenContact, onNavigate }) {
               </li>
               <li>
                 <a 
-                  href="https://www.instagram.com/bilalsalmani.in/" 
+                  href="https://www.instagram.com/_abhinraj/" 
                   target="_blank" 
                   rel="noreferrer" 
                   className="inline-flex items-center gap-1.5 text-foreground/80 hover:text-accent transition-colors font-medium"
@@ -142,7 +142,7 @@ export default function Footer({ onOpenContact, onNavigate }) {
               </li>
               <li>
                 <a 
-                  href="mailto:bilalsalmani9897@gmail.com" 
+                  href="mailto:abhinraj8086@gmail.com" 
                   className="inline-flex items-center gap-1.5 text-foreground/80 hover:text-accent transition-colors font-medium"
                 >
                   <span>Email</span>
@@ -162,7 +162,7 @@ export default function Footer({ onOpenContact, onNavigate }) {
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
                 <span>Available for work</span>
               </li>
-              <li>BCA Graduate (2026) · 10+ Projects Built</li>
+              <li>10+ Projects Built</li>
               <li>Karnataka, India · IST (UTC+5:30)</li>
             </ul>
           </div>
@@ -171,12 +171,12 @@ export default function Footer({ onOpenContact, onNavigate }) {
 
         {/* Bottom Bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-muted font-medium gap-4">
-          <p>© 2026 Bilal · All rights reserved</p>
+          <p>© 2026 Abhinraj · All rights reserved</p>
           <a 
-            href="mailto:bilalsalmani9897@gmail.com" 
+            href="mailto:abhinraj8086@gmail.com" 
             className="hover:text-foreground transition-colors font-mono"
           >
-            bilalsalmani9897@gmail.com
+            abhinraj8086@gmail.com
           </a>
           <button
             onClick={scrollToTop}

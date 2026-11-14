@@ -103,58 +103,15 @@ export default function DoorsSection({ onNavigate }) {
       style={{
         background: 'linear-gradient(180deg, var(--background) 0%, rgba(201, 169, 110, 0.04) 50%, var(--background) 100%)'
       }}
-    >
-      {/* Background Pinned Typography */}
-      <div className="absolute top-16 left-0 right-0 text-center select-none pointer-events-none opacity-10 dark:opacity-5">
-        <h2 className="text-4xl sm:text-6xl md:text-8xl font-black uppercase tracking-tight text-foreground">
-          Magic happens behind the doors
-        </h2>
-      </div>
+    >      
 
       <div className="max-w-[88rem] w-full mx-auto flex flex-col items-center z-10">
         
         {/* Section Heading & Subheading */}
         <div className="text-center mb-8 max-w-2xl">
-          <p className="text-xs sm:text-sm font-mono tracking-widest text-accent font-semibold uppercase mb-2">
-            · Selected Disciplines ·
-          </p>
-          <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-foreground">
-            Magic happens <span className="font-cursive font-normal italic text-4xl sm:text-6xl">behind the doors</span>
+          <h2 className="text-3xl sm:text-5xl font-bold tracking-tight text-foreground">
+            Magic happens behind the doors
           </h2>
-        </div>
-
-        {/* Dynamic Door Info Card */}
-        <div 
-          id="dinfo"
-          className="glass-pill rounded-2xl p-6 sm:p-8 max-w-2xl w-full mb-12 shadow-xl border border-white/60 dark:border-white/10 transition-all duration-300"
-        >
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-black/10 dark:border-white/10 pb-4 mb-4">
-            <div>
-              <h3 className="text-2xl sm:text-3xl font-extrabold text-foreground tracking-tight">
-                {activeDoor.title}
-              </h3>
-              <p className="text-xs sm:text-sm font-mono font-medium tracking-wide text-accent uppercase mt-1">
-                {activeDoor.subtitle}
-              </p>
-            </div>
-            
-            <button
-              onClick={(e) => handleOpenDoor(activeDoorIndex, e)}
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#111111] text-[#f8f6f2] dark:bg-[#f8f6f2] dark:text-[#111111] text-xs sm:text-sm font-medium transition-all hover:scale-105 active:scale-95 cursor-pointer shadow-md self-start sm:self-center"
-            >
-              <span>Explore Projects</span>
-              <ArrowRight className="w-3.5 h-3.5" />
-            </button>
-          </div>
-
-          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-foreground/85">
-            {activeDoor.bullets.map((bullet, idx) => (
-              <li key={idx} className="flex items-start gap-2.5">
-                <CheckCircle2 className="w-4 h-4 text-accent shrink-0 mt-0.5" />
-                <span className="leading-snug">{bullet}</span>
-              </li>
-            ))}
-          </ul>
         </div>
 
         {/* 4 Arched 3D Doors Gallery */}

@@ -40,7 +40,7 @@ export default function MenuDrawer({ isOpen, onClose, onNavigate, onOpenContact 
       {/* Top Header */}
       <div className="flex items-center justify-between max-w-[88rem] w-full mx-auto">
         <span className="font-extrabold text-2xl tracking-tight">
-          Bilal<span className="text-accent">.</span>
+          Abhinraj<span className="text-accent">.</span>
         </span>
 
         <button

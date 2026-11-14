@@ -17,8 +17,8 @@ export default function ContactPage({ onNavigate }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const text = `Hi Bilal, my name is ${formData.name || 'Client'}.%0A%0AEmail: ${formData.email}%0APhone: ${formData.phone}%0A%0AProject Scope:%0A${encodeURIComponent(formData.details || "I'd like to talk about a new project.")}`;
-    window.open(`https://wa.me/919897000000?text=${text}`, '_blank');
+    const text = `Hi Abhinraj, my name is ${formData.name || 'Client'}.%0A%0AEmail: ${formData.email}%0APhone: ${formData.phone}%0A%0AProject Scope:%0A${encodeURIComponent(formData.details || "I'd like to talk about a new project.")}`;
+    window.open(`https://wa.me/91000000?text=${text}`, '_blank');
   };
 
   return (
@@ -140,11 +140,11 @@ export default function ContactPage({ onNavigate }) {
               Prefer writing an email directly? Reach out anytime with project specs, RFPs, or contract inquiries.
             </p>
             <a
-              href="mailto:bilalsalmani9897@gmail.com"
+              href="mailto:abhinraj8086@gmail.com"
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-black/5 dark:bg-white/5 text-foreground hover:text-accent font-mono text-sm transition-colors border border-black/5 dark:border-white/5"
             >
               <Mail className="w-4 h-4 text-accent" />
-              <span>bilalsalmani9897@gmail.com</span>
+              <span>abhinraj8086@gmail.com</span>
             </a>
           </div>
 
@@ -154,7 +154,7 @@ export default function ContactPage({ onNavigate }) {
             </h3>
             <div className="space-y-3">
               <a
-                href="https://github.com/bilal9897"
+                href="https://github.com/Abhinrajp"
                 target="_blank"
                 rel="noreferrer"
                 className="flex items-center justify-between p-3.5 rounded-2xl bg-black/5 dark:bg-white/5 hover:bg-black/10 dark:hover:bg-white/10 transition-colors text-foreground font-medium text-sm"
@@ -163,11 +163,11 @@ export default function ContactPage({ onNavigate }) {
                   <Github className="w-5 h-5 text-accent" />
                   <span>GitHub</span>
                 </div>
-                <span className="text-xs font-mono text-muted">@bilal9897</span>
+                <span className="text-xs font-mono text-muted">@Abhinrajp</span>
               </a>
 
               <a
-                href="https://www.linkedin.com/in/bilal-salmani-6190ab292/"
+                href="https://www.linkedin.com/in/abhinraj-p/"
                 target="_blank"
                 rel="noreferrer"
                 className="flex items-center justify-between p-3.5 rounded-2xl bg-black/5 dark:bg-white/5 hover:bg-black/10 dark:hover:bg-white/10 transition-colors text-foreground font-medium text-sm"
@@ -176,11 +176,11 @@ export default function ContactPage({ onNavigate }) {
                   <Linkedin className="w-5 h-5 text-accent" />
                   <span>LinkedIn</span>
                 </div>
-                <span className="text-xs font-mono text-muted">in/bilal-salmani</span>
+                <span className="text-xs font-mono text-muted">in/abhinraj</span>
               </a>
 
               <a
-                href="https://www.instagram.com/bilalsalmani.in/"
+                href="https://www.instagram.com/_abhinraj/"
                 target="_blank"
                 rel="noreferrer"
                 className="flex items-center justify-between p-3.5 rounded-2xl bg-black/5 dark:bg-white/5 hover:bg-black/10 dark:hover:bg-white/10 transition-colors text-foreground font-medium text-sm"
@@ -189,7 +189,7 @@ export default function ContactPage({ onNavigate }) {
                   <Instagram className="w-5 h-5 text-accent" />
                   <span>Instagram</span>
                 </div>
-                <span className="text-xs font-mono text-muted">@bilalsalmani.in</span>
+                <span className="text-xs font-mono text-muted">@_abhinraj</span>
               </a>
             </div>
           </div>
